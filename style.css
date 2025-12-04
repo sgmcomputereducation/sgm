@@ -1,0 +1,116 @@
+/* Body & container */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+#main-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    background: #1f3c88;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    text-align: center;
+    margin: 20px 0 15px;
+}
+h2 {
+    font-size: 1.8rem;
+    color: #1f3c88;
+    background: #ffffff;
+    border: 2px solid #1f3c88;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0 15px;
+    transition: transform 0.3s;
+}
+h2:hover {
+    transform: scale(1.03);
+}
+
+/* Paragraphs & lists */
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    color: #555;
+}
+ul, ol {
+    line-height: 1.8;
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+
+/* Cards */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+.card h3 {
+    margin-top: 0;
+    color: #0a3d62;
+    font-size: 1.3rem;
+}
+
+/* CTA Button */
+.cta-btn {
+    display: inline-block;
+    background: #0a3d62;
+    color: #ffffff;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.cta-btn:hover {
+    background: #06509b;
+    transform: scale(1.05);
+}
+
+/* Modules grid */
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Animations */
+.fadeInUp {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    p { font-size: 1rem; }
+}
