@@ -75,21 +75,6 @@ li {
     font-size: 1.3rem;
 }
 
-/* CTA Button */
-.cta-btn {
-    display: inline-block;
-    background: #0a3d62;
-    color: #ffffff;
-    padding: 14px 28px;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-.cta-btn:hover {
-    background: #06509b;
-    transform: scale(1.05);
-}
 
 /* Modules grid */
 .modules-grid {
